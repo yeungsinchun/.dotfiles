@@ -147,5 +147,5 @@ unset _p10k_theme
 # >>> grok installer >>>
 export PATH="$HOME/.grok/bin:$PATH"
 fpath=(~/.grok/completions/zsh $fpath)
-autoload -Uz compinit && compinit -C
+autoload -Uz compinit && compinit
 # <<< grok installer <<<
