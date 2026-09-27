@@ -2,62 +2,71 @@
   "version": 1,
   "skills": {
     "canvas": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "create-hook": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "create-rule": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "create-skill": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "create-subagent": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "sdk": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "migrate-to-skills": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "shell": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "split-to-prs": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "statusline": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "update-cli-config": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "update-cursor-settings": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "loop": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "new-repo": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "origin": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "share": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "rename-chat": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "goal": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
     },
     "autopilot": {
-      "lastSyncedAt": 1789582729224
+      "lastSyncedAt": 1790347901418
+    },
+    "review": {
+      "lastSyncedAt": 1790347901418
+    },
+    "review-bugbot": {
+      "lastSyncedAt": 1790347901418
+    },
+    "review-security": {
+      "lastSyncedAt": 1790347901418
     }
   },
-  "lastInventoryAt": 1789540092472
+  "lastInventoryAt": 1790347537437
 }
