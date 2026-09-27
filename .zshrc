@@ -143,3 +143,9 @@ if [[ -r "$_p10k_theme" ]]; then
   [[ -r ~/.p10k.zsh ]] && source ~/.p10k.zsh
 fi
 unset _p10k_theme
+
+# >>> grok installer >>>
+export PATH="$HOME/.grok/bin:$PATH"
+fpath=(~/.grok/completions/zsh $fpath)
+autoload -Uz compinit && compinit -C
+# <<< grok installer <<<
