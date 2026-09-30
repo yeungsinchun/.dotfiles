@@ -2,71 +2,86 @@
   "version": 1,
   "skills": {
     "canvas": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "create-hook": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "create-rule": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "create-skill": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "create-subagent": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "sdk": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "migrate-to-skills": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "shell": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "split-to-prs": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "statusline": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "update-cli-config": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "update-cursor-settings": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "loop": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "new-repo": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "origin": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "share": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "rename-chat": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "goal": {
-      "lastSyncedAt": 1790347901418
-    },
-    "autopilot": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "review": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "review-bugbot": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
     },
     "review-security": {
-      "lastSyncedAt": 1790347901418
+      "lastSyncedAt": 1790614393196
+    },
+    "babysit": {
+      "lastSyncedAt": 1790614393196
+    },
+    "automate": {
+      "lastSyncedAt": 1790614393196
+    },
+    "migrate-to-builds": {
+      "lastSyncedAt": 1790614393196
+    },
+    "onboard": {
+      "lastSyncedAt": 1790614393196
+    },
+    "subscribe": {
+      "lastSyncedAt": 1790614393196
+    },
+    "walkthrough-artifacts": {
+      "lastSyncedAt": 1790614393196
     }
   },
-  "lastInventoryAt": 1790347537437
+  "lastInventoryAt": 1790612550814
 }
