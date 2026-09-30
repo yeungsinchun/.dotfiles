@@ -13,6 +13,14 @@ if [[ -n "$TMUX" ]]; then
   unset _tmux_term
 fi
 
+# Load environment variables from ~/.env (PNPM_HOME, ANDROID_HOME, etc.)
+# ~/.env mixes plain assignments and an export line; set -a auto-exports all.
+if [[ -f "$HOME/.env" ]]; then
+  set -a
+  source "$HOME/.env"
+  set +a
+fi
+
 path=(
   # CLI tools
   $HOME/.cargo/bin
@@ -37,6 +45,7 @@ path=(
   # Android (ANDROID_HOME from ~/.env)
   $ANDROID_HOME/emulator
   $ANDROID_HOME/platform-tools
+  $ANDROID_HOME/cmdline-tools/latest/bin
 
   # Languages / math
   $HOME/.juliaup/bin
