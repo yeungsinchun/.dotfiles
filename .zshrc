@@ -31,6 +31,7 @@ path=(
   # Homebrew
   /opt/homebrew/bin
   /opt/homebrew/opt/llvm/bin
+  /opt/homebrew/opt/mtr/sbin
 
   # Personal
   $HOME/Documents/path
@@ -59,7 +60,9 @@ path=(
 )
 export PATH
 
-# nvm node binaries (pyright-langserver, etc.) - nvm itself stays lazy-loaded below
+# nvm: put the active Node bin on PATH so node/npm/npx are real binaries (not
+# shell wrappers and not an Automic Vault /usr/local launcher). Full nvm loads
+# only when you run the `nvm` command (lazy load below).
 export NVM_DIR="$HOME/.nvm"
 if [[ -d "$NVM_DIR/versions/node" ]]; then
   _latest_node_bin="$NVM_DIR/versions/node/$(command ls -1 "$NVM_DIR/versions/node" | sort -V | tail -1)/bin"
@@ -103,16 +106,15 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 # export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
-# Lazy-load nvm
+# Lazy-load nvm only for the `nvm` CLI. Do not wrap node/npm/npx: PATH already
+# has the version bin, so those stay ordinary Node tools and never hit a Vault
+# launcher shadowing /usr/local/bin/npm.
 lazy_load_nvm() {
-  unset -f nvm node npm npx lazy_load_nvm
+  unset -f nvm lazy_load_nvm
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 }
-nvm()  { lazy_load_nvm; nvm "$@"; }
-node() { lazy_load_nvm; node "$@"; }
-npm()  { lazy_load_nvm; npm "$@"; }
-npx()  { lazy_load_nvm; npx "$@"; }
+nvm() { lazy_load_nvm; nvm "$@"; }
 
 # opam
 [[ ! -r "$HOME/.opam/opam-init/init.zsh" ]] || source "$HOME/.opam/opam-init/init.zsh" > /dev/null 2> /dev/null
