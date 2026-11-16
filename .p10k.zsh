@@ -1,6 +1,8 @@
 # Powerlevel10k config matching the old powerline-zsh prompt: one line, powerline
-# separators, current directory, git state, and last exit status. No extra fonts
-# beyond the powerline glyphs that prompt already used (U+2B80 / U+2B81).
+# separators, current directory, git state, and last exit status.
+# Separators use modern Nerd Font powerline arrows (U+E0B0 / U+E0B1), which
+# MesloLGM Nerd Font Mono and Termux Nerd fonts render. The old vim-powerline
+# codepoints U+2B80 / U+2B81 show as boxes on Termux even when Nerd glyphs work.
 #
 # Generated for this repo rather than `p10k configure`; `p10k configure` will
 # overwrite this file if you run it.
@@ -20,7 +22,7 @@
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs status)
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 
-  # Compatible unicode; separators are the old vim-powerline glyphs.
+  # Compatible icon set; separators are modern Nerd powerline arrows (U+E0B0).
   typeset -g POWERLEVEL9K_MODE=compatible
   typeset -g POWERLEVEL9K_ICON_PADDING=none
   typeset -g POWERLEVEL9K_ICON_BEFORE_CONTENT=true
@@ -37,9 +39,9 @@
   typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_SUFFIX=
 
   typeset -g POWERLEVEL9K_BACKGROUND=237
-  typeset -g POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='%244F\u2B81'
-  typeset -g POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\u2B80'
-  typeset -g POWERLEVEL9K_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL='\u2B80'
+  typeset -g POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='%244F\uE0B1'
+  typeset -g POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\uE0B0'
+  typeset -g POWERLEVEL9K_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL='\uE0B0'
   typeset -g POWERLEVEL9K_LEFT_PROMPT_FIRST_SEGMENT_START_SYMBOL=
   typeset -g POWERLEVEL9K_EMPTY_LINE_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL=
   typeset -g POWERLEVEL9K_VISUAL_IDENTIFIER_EXPANSION=
